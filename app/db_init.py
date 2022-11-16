@@ -19,7 +19,7 @@ def init():
                 "group_id INT REFERENCES groups(group_id));")
     conn.commit()
 
-    cur.execute("INSERT INTO groups (title) VALUES ('К-31'), ('СО-31'), ('РТ-31');")
+    cur.execute("INSERT INTO groups (title) VALUES ('К-31'), ('МЗ-31'), ('ИСМ-31'), ('ИСМ-22-11');")
     conn.commit()
 
     cur.execute("INSERT INTO students (name, age, group_id) "
